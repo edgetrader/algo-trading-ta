@@ -1,0 +1,59 @@
+LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=None, reg_alpha=0.0, reg_lambda=0.0, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+[{'learning_rate': [0.005, 0.001], 'max_depth': [9, 12], 'n_estimators': [150], 'num_leaves': [10, 12], 'subsample': [0.6, 0.8], 'colsample_bytree': [0.6, 0.8], 'random_state': [3567]}]
+
+######
+The best parameter for LGBMClassifier is {'colsample_bytree': 0.6, 'learning_rate': 0.005, 'max_depth': 9, 'n_estimators': 150, 'num_leaves': 12, 'random_state': 3567, 'subsample': 0.6} with a runtime of 7.60 minutes.
+######
+
+RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=None, oob_score=False, random_state=None,
+                       verbose=0, warm_start=False)
+[{'n_estimators': [150], 'max_features': [0.6, 0.8], 'max_depth': [9, 12], 'max_samples': [0.6, 0.8], 'criterion': ['gini', 'entropy'], 'oob_score': [True], 'random_state': [3567]}]
+
+######
+The best parameter for RandomForestClassifier is {'criterion': 'gini', 'max_depth': 12, 'max_features': 0.6, 'max_samples': 0.6, 'n_estimators': 150, 'oob_score': True, 'random_state': 3567} with a runtime of 116.56 minutes.
+######
+
+GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='deviance', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_impurity_split=None,
+                           min_samples_leaf=1, min_samples_split=2,
+                           min_weight_fraction_leaf=0.0, n_estimators=100,
+                           n_iter_no_change=None, presort='deprecated',
+                           random_state=None, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+[{'n_estimators': [150], 'subsample': [0.6, 0.8], 'max_features': [0.6, 0.8], 'max_depth': [9, 12], 'learning_rate': [0.005, 0.001], 'random_state': [3567]}]
+
+######
+The best parameter for GradientBoostingClassifier is {'learning_rate': 0.005, 'max_depth': 12, 'max_features': 0.6, 'n_estimators': 150, 'random_state': 3567, 'subsample': 0.6} with a runtime of 426.21 minutes.
+######
+
+XGBClassifier(base_score=None, booster=None, colsample_bylevel=None,
+              colsample_bynode=None, colsample_bytree=None, gamma=None,
+              gpu_id=None, importance_type='gain', interaction_constraints=None,
+              learning_rate=None, max_delta_step=None, max_depth=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              n_estimators=100, n_jobs=None, num_parallel_tree=None,
+              objective='binary:logistic', random_state=None, reg_alpha=None,
+              reg_lambda=None, scale_pos_weight=None, subsample=None,
+              tree_method=None, validate_parameters=False, verbosity=None)
+[{'learning_rate': [0.005, 0.001], 'max_depth': [9, 12], 'n_estimators': [150], 'gamma': [0.01], 'subsample': [0.6, 0.8], 'colsample_bytree': [0.6, 0.8], 'seed': [3567]}]
+
+######
+The best parameter for XGBClassifier is {'colsample_bytree': 0.6, 'gamma': 0.01, 'learning_rate': 0.005, 'max_depth': 12, 'n_estimators': 150, 'seed': 3567, 'subsample': 0.6} with a runtime of 81.60 minutes.
+######
+
+Total optimization time was 631.96 minutes.
+----------
