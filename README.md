@@ -44,6 +44,9 @@ Hence,
 ## Forward Testing
 Trading strategy testing on unseen forward data.  Performance of each trade is consolidated and measured against a benchmark which is the performance of the trading instrument over the same period.
 
+## Notebook
+https://github.com/edgetrader/algo-trading-ta/blob/master/notebook/algo-trading-ta.ipynb
+
 ## Useful Libraries
 1. [Binance REST API python implementation](https://pypi.org/project/python-binance/)
 2. [Technical Analysis Library in Python](https://pypi.org/project/ta/)
